@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "start:heroku": "next start -p $PORT"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,12 @@
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "cacheDirectories": [
+    ".next/cache"
+  ],
+  "engines": {
+    "node": "12.16.3",
+    "npm": "6.14.4"
   }
 }
