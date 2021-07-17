@@ -21,12 +21,14 @@ const IndexPage = () => (
         {/* This will fetch the image at full width and 75% of quality */}
         <div style={{ width: '300px' }}>
             <Image
+                placeholder="blur"
                 loader={cloudflareLoader}
                 src={imgSrc}
             />
         </div>
         {/* This will fetch the image at closest preset width to 300px and 75% of quality */}
         <Image
+            placeholder="blur"
             loader={cloudflareLoader}
             src={imgSrc}
             width={300}
@@ -34,6 +36,7 @@ const IndexPage = () => (
         />
         {/* This will also do the same as above */}
         <Image
+            placeholder="blur"
             loader={cloudflareLoader}
             src="/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg"
             width={300}
@@ -41,6 +44,7 @@ const IndexPage = () => (
         />
         {/* This will fetch the image according to the viewport width using srcset */}
         <Image
+            placeholder="blur"
             loader={cloudflareLoader}
             src={imgSrc}
             layout="responsive"
